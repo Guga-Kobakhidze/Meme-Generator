@@ -14,7 +14,9 @@ const Header: React.FC = () => {
             <img src={TrollFace} alt="TrollFace" />
             <Text variant="h4" content="Meme Generator" />
           </Box>
-          <Text variant="h5" content="This is Meme Generator" />
+          <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+            <Text variant="h5" content="This is Meme Generator" />
+          </Box>
         </Box>
       </Box>
     </Box>

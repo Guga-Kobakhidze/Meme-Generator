@@ -1,7 +1,6 @@
 import { SxProps } from "@mui/system";
 
-export const HeaderStyles: SxProps = {
-  padding: "20px 0",
+export const BackgroundColor: SxProps = {
   background: "linear-gradient(to right, #672280, #A626D3)",
   backgroundImage: "linear-gradient(to right, #672280, #A626D3)",
   "@supports (-webkit-background-clip: text)": {
@@ -13,6 +12,11 @@ export const HeaderStyles: SxProps = {
   "@supports (-o-background-size:auto)": {
     backgroundImage: "-o-linear-gradient(left, #672280, #A626D3)",
   },
+};
+
+export const HeaderStyles: SxProps = {
+  padding: "20px 0",
+  ...BackgroundColor,
 
   img: {
     width: 80,
